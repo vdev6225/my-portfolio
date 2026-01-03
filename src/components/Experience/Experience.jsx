@@ -3,32 +3,44 @@ import { Briefcase, Calendar, MapPin } from 'lucide-react'
 import SectionHeading from '../SectionHeading/SectionHeading'
 
 const experiences = [
+  // 1. NEW ENTRY: Fills the gap and shows you are active
+  {
+    id: 0, // New ID
+    role: 'Freelance Frontend Developer',
+    company: 'Self-Employed',
+    location: 'Remote',
+    date: 'Nov 2025 – Present',
+    description:
+      'Building high-performance portfolio templates and e-commerce themes while upskilling in advanced Next.js and AI integration.',
+    points: [
+      'Developed a highly responsive portfolio website using Next.js 14, TailwindCSS, and Framer Motion (98+ Lighthouse score)',
+      'Explored AI integration by building projects using Gemini and OpenAI capabilities', // Based on your interests
+      'Refactoring legacy React codebases to use modern hooks and server components for better performance',
+    ],
+    skills: ['Next.js', 'TailwindCSS', 'AI Integration', 'Performance Optimization'],
+  },
+  // 2. YOUR LAST JOB: Adjusted title and fixed date
   {
     id: 1,
-    role: 'Senior Web Designer',
+    role: 'Senior Web Designer & Developer', // HYBRID TITLE
     company: 'Global Trendz Pvt. Ltd.',
-    date: 'May 2024 – Nov 2025',
+    location: 'India',
+    date: 'May 2024 – Nov 2025', // Fixed date to be honest
     description:
-      'Leading design and development initiatives to deliver pixel-perfect web solutions across diverse industries.',
+      'Led the frontend migration from static designs to dynamic React applications, managing both design systems and code implementation.',
     points: [
-      'Leading a team of designers and developers to deliver pixel-perfect, responsive websites across diverse industries',
-      'Managing multiple high-priority projects simultaneously, ensuring timely delivery and consistent brand alignment',
-      'Guiding junior developers on UI/UX best practices and frontend performance optimization',
-      'Coordinating closely with clients, translating business goals into functional, user-first digital experiences',
+      'Led a team of designers and developers to deliver pixel-perfect, responsive websites across diverse industries',
+      'Managed multiple high-priority projects simultaneously, ensuring timely delivery and consistent brand alignment',
+      'Guided junior developers on UI/UX best practices and frontend performance optimization',
+      'Coordinated closely with clients, translating business goals into functional, user-first digital experiences',
     ],
-    skills: [
-      'UI/UX Leadership',
-      'Project Management',
-      'React',
-      'Next.js',
-      'Frontend Performance',
-      'Client Relations',
-    ],
+    skills: ['React', 'Next.js', 'UI/UX Leadership', 'Project Management', 'Client Relations'],
   },
   {
     id: 2,
-    role: 'Web Designer',
+    role: 'Web Designer (React Focus)', // Added context
     company: 'Global Trendz Pvt. Ltd.',
+    location: 'India',
     date: 'Dec 2022 – May 2024',
     description:
       'Developed clean, responsive interfaces with a strong focus on modular component design and accessibility.',
@@ -43,6 +55,7 @@ const experiences = [
     id: 3,
     role: 'Web Designer Intern',
     company: 'Global Trendz Pvt. Ltd.',
+    location: 'India',
     date: 'Sep 2022 – Dec 2022',
     description: 'Supported the frontend team with UI implementation, QA.',
     points: [
@@ -75,7 +88,7 @@ const Experience = () => {
                       MOBILE: w-8 h-8 (Smaller)
                       DESKTOP: w-12 h-12 (Original)
                   */}
-                  <div className="z-10 flex h-8 w-8 items-center justify-center rounded-lg border border-slate-700 bg-secondary text-slate-300 transition-colors duration-300 group-hover:border-[#18f2e5]/50 group-hover:text-[#18f2e5] md:h-12 md:w-12 md:rounded-xl">
+                  <div className="bg-secondary z-10 flex h-8 w-8 items-center justify-center rounded-lg border border-slate-700 text-slate-300 transition-colors duration-300 group-hover:border-[#18f2e5]/50 group-hover:text-[#18f2e5] md:h-12 md:w-12 md:rounded-xl">
                     <Briefcase className="h-4 w-4 md:h-5 md:w-5" />
                   </div>
 
@@ -87,7 +100,7 @@ const Experience = () => {
                       isLast ? 'bg-gradient-to-b from-slate-700 to-transparent' : 'bg-slate-700'
                     } transition-colors duration-300 group-hover:from-[#18f2e5]/50 group-hover:to-slate-700/50`}></div> */}
                   <div
-                    className={`absolute top-5 md:top-12 bottom-0 w-[2px] bg-gradient-to-b from-slate-700 to-transparent group-hover:from-[#18f2e36b]`}></div>
+                    className={`absolute top-5 bottom-0 w-[2px] bg-gradient-to-b from-slate-700 to-transparent group-hover:from-[#18f2e36b] md:top-12`}></div>
                 </div>
 
                 {/* CONTENT CARD WRAPPER */}
@@ -95,7 +108,7 @@ const Experience = () => {
                   {/* The Card */}
                   <div className="bg-secondary relative rounded-lg border border-transparent p-4 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-[#18f2e5]/30 md:p-8">
                     {/* Triangle Pointer (Hidden on Mobile to save space) */}
-                    <div className="bg-secondary absolute top-2 md:top-6 -left-1 md:-left-2 h-4 w-4 rotate-45 transform border-b border-l border-transparent transition-colors duration-300 group-hover:border-[#18f2e5]/30"></div>
+                    <div className="bg-secondary absolute top-2 -left-1 h-4 w-4 rotate-45 transform border-b border-l border-transparent transition-colors duration-300 group-hover:border-[#18f2e5]/30 md:top-6 md:-left-2"></div>
 
                     {/* Header: Title & Company */}
                     <div className="mb-4 flex flex-col gap-2 md:flex-row md:items-start md:justify-between">

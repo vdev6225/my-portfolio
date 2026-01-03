@@ -2,6 +2,7 @@ import './globals.css'
 
 import Footer from '@/components/Footer/Footer'
 import Navbar from '@/components/Navbar/Navbar'
+import BackToTop from '@/components/UI/BackToTop'
 // import ThemeMenu from '@/components/Theme/ThemeMenu'
 import { Fira_Code } from 'next/font/google'
 
@@ -52,6 +53,7 @@ export default function RootLayout({ children }) {
 
         {/* <ThemeMenu /> */}
         <Footer />
+        <BackToTop />
       </body>
     </html>
   )

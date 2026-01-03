@@ -1,112 +1,134 @@
-import { footerLinks, languages } from '@/appData'
-import { socials } from '@/appData/personal'
-import Logo from '../Navbar/Logo'
+import { footerLinks } from '@/appData'
+import { Github, Linkedin, Mail, Twitter } from 'lucide-react'
+import Logo from '../../assets/images/logo.png'
+import Image from 'next/image'
+import Link from 'next/link'
+
+const SocialLink = ({ href, icon }) => {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+      className="bg-secondary flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 text-slate-400 transition-all hover:-translate-y-1 hover:border-[#18f2e5] hover:text-[#18f2e5]">
+      {icon}
+    </a>
+  )
+}
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary relative flex min-h-[560px] flex-col justify-between gap-20 overflow-hidden px-4 py-14 md:p-14">
-      <div className="relative z-20 grid grid-cols-1 items-start gap-20 md:grid-cols-2 md:gap-12">
+    <footer className="bg-secondary relative flex min-h-[420px] flex-col justify-between gap-10 overflow-hidden px-4 py-14 md:p-14">
+      {/* Top Section */}
+      <div className="relative z-20 grid grid-cols-1 items-start md:grid-cols-2 gap-12">
         <div>
-          <h5 className="mb-8 flex items-center gap-2">
-            <Logo width={30} height={24} />
-            <span className="text-neutral text-lg font-medium">Logoipsum</span>
-          </h5>
+          <Link href={'/'}>
+            <h5 className="mb-5 flex items-center gap-2">
+              <Image src={Logo} alt="Logo" width="50" />
+              <span className="text-neutral text-lg font-medium">Vishnu</span>
+            </h5>
+          </Link>
 
-          <p className="text-tertiary-content">
-            The first free end-to-end analytics service for the site, designed to work with
-            enterprises of various levels and business segments.
+          <p className="text-tertiary-content max-w-sm">
+            Senior Web Designer & Frontend Developer. Building pixel-perfect, responsive, and
+            accessible digital experiences for the modern web.
           </p>
-
-          <a
-            href="#"
-            className="text-neutral mt-4 inline-flex items-center gap-2 text-xs hover:underline"
-          >
-            More about us
-            <span className="bg-neutral inline-block size-[10px] rounded-full" />
-          </a>
+          <ul className="mt-5 md:mt-6 flex gap-4">
+            <SocialLink href="#" icon={<Github className="h-5 w-5" />} />
+            <SocialLink href="#" icon={<Linkedin className="h-5 w-5" />} />
+            <SocialLink href="#" icon={<Twitter className="h-5 w-5" />} />
+            {/* <SocialLink href="mailto:pv7451@gmail.com" icon={<Mail className="h-5 w-5" />} /> */}
+          </ul>
         </div>
 
-        <div className="flex flex-wrap gap-8">
+        <div className="flex flex-wrap gap-8 md:justify-end">
           {footerLinks.map((link) => (
-            <a
+            <Link
               key={link.href}
               href={link.href}
-              className="text-tertiary-content hover:text-neutral transition-colors duration-300 hover:underline"
-            >
-              {link.title}.
-            </a>
+              className="text-tertiary-content hover:text-neutral transition-colors duration-300">
+              {link.title}
+            </Link>
           ))}
-        </div>
-      </div>
-
-      <div className="relative z-20 flex flex-col-reverse gap-20 md:grid md:grid-cols-2 md:gap-12">
-        <div className="grid grid-cols-2 gap-4">
-          <ul className="flex flex-col gap-4">
-            {socials.map((item, index) => (
-              <li key={index}>
-                <a
-                  href={item.href}
-                  className="text-neutral transition-color hover:text-neutral/50 h-full w-full duration-300"
-                >
-                  {item.icon}
-                </a>
-              </li>
-            ))}
-          </ul>
-
-          <p className="text-tertiary-content flex flex-col self-end text-right text-xs md:text-center">
-            <span>© 2025 — Copyright</span>
-            <span>All Rights reserved</span>
-          </p>
-        </div>
-
-        <div className="flex flex-col justify-between gap-[200px] md:flex-row md:gap-8">
-          <div className="space-y-10 md:self-end">
+          <div className="mt-5 space-y-10 md:text-right w-full">
             <div>
-              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Us</h5>
-              <a
-                href="mailto:johndoe@gmail.com"
-                className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300"
-              >
-                johndoe@gmail.com
-              </a>
-              <a
-                href="tel:+92 3123456789"
-                className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300"
-              >
-                +92 3123456789
-              </a>
+              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Me</h5>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="mailto:pv7451@gmail.com"
+                  className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
+                  pv7451@gmail.com
+                </a>
+                <a
+                  href="tel:+919711623916"
+                  className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
+                  +91 9711623916
+                </a>
+              </div>
             </div>
 
             <div>
               <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
-              <address className="text-tertiary-content flex flex-col text-sm font-light">
-                <span>123456, Pakistan</span>
-                <span>Karachi 22/5/8, Office 4</span>
+              <address className="text-tertiary-content flex flex-col text-sm font-light not-italic">
+                <span>New Delhi, India</span>
               </address>
-            </div>
-          </div>
-
-          <div className="md:self-end">
-            <p className="text-neutral mb-8 text-sm md:text-right">Languages</p>
-            <div className="flex gap-8 md:gap-4 lg:gap-8">
-              {languages.map((language, idx) => (
-                <span
-                  key={language}
-                  className={idx === 0 ? 'text-neutral' : 'text-tertiary-content'}
-                >
-                  {language}
-                </span>
-              ))}
             </div>
           </div>
         </div>
       </div>
 
+      {/* Bottom Section */}
+      {/* <div className="relative z-20 flex flex-col-reverse md:grid md:grid-cols-2 md:gap-12">
+        <div className="grid grid-cols-1 gap-4"> */}
+      {/* Social Icons */}
+      {/* <ul className="flex gap-4">
+            <SocialLink href="#" icon={<Github className="h-5 w-5" />} />
+            <SocialLink href="#" icon={<Linkedin className="h-5 w-5" />} />
+            <SocialLink href="#" icon={<Twitter className="h-5 w-5" />} />
+          </ul>
+        </div> */}
+
+      {/* Contact Info */}
+      {/* <div className="flex flex-col justify-between md:flex-row md:justify-end md:gap-8 md:self-end">
+          <div className="space-y-10 md:text-right">
+            <div>
+              <h5 className="text-neutral mb-4 text-lg font-medium">Contact Me</h5>
+              <div className="flex flex-col gap-1">
+                <a
+                  href="mailto:pv7451@gmail.com"
+                  className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
+                  pv7451@gmail.com
+                </a>
+                <a
+                  href="tel:+919711623916"
+                  className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
+                  +91 9711623916
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <h5 className="text-neutral mb-4 text-lg font-medium">Location</h5>
+              <address className="text-tertiary-content flex flex-col text-sm font-light not-italic">
+                <span>New Delhi, India</span>
+              </address>
+            </div>
+          </div>
+        </div> */}
+      {/* // </div> */}
+
+      {/* Background Circles */}
       <div className="bg-neutral/4 absolute top-1/2 -right-[40%] z-0 h-[120dvw] w-[120dvw] -translate-y-1/2 rounded-full p-14 md:top-0 md:-right-[255px] md:-bottom-[450px] md:size-[1030px] md:-translate-y-0 md:p-20">
         <div className="bg-neutral/4 size-full rounded-full p-14 md:p-20">
           <div className="bg-neutral/5 size-full rounded-full" />
         </div>
+      </div>
+      {/* Copyright & Designed By Section */}
+      <div className="relative z-20 text-tertiary-content flex w-full justify-center gap-1 self-end text-right text-xs md:text-center">
+        {/* Added "Designed by" text with slightly lower opacity */}
+        <span className="text-neutral/50 mt-2 md:mt-0">
+          Design and Developed by <span className="text-neutral font-medium">Vishnu🤍.</span>
+        </span>
       </div>
     </footer>
   )

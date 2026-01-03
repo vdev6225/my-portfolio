@@ -14,15 +14,15 @@ const navItems = [
   },
   {
     label: '_projects',
-    href: '/#projects',
+    href: '/projects',
   },
   {
     label: '_about-us',
-    href: '/#about',
+    href: '/about-us',
   },
   {
-    label: '_services',
-    href: '/#services',
+    label: '_experience',
+    href: '/#experience',
   },
   {
     label: '_contact-me',

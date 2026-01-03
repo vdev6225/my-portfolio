@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { PreviewIcon } from '../../utils/icons'
+import { PlayCircle } from 'lucide-react'
 
 const IconText = ({ icon, text }) => (
   <li className="flex gap-2">
@@ -27,18 +28,24 @@ const ProjectCard = ({ data }) => {
   return (
     <div className="bg-secondary border-border flex flex-col justify-between rounded-[14px] border p-5 transition-all duration-300 hover:border-[#18f2e5]/30">
       <div className="flex flex-col gap-2">
-        <figure className="flex justify-end overflow-hidden">
-          <Image
-            src={cover}
-            width={150}
-            height={80}
-            alt="Project Cover"
-            className="h-[160px] w-full rounded-md object-cover shadow-[0px_1.66px_3.74px_-1.25px_#18274B1F]"
-          />
-        </figure>
+        <a href={livePreview} target="_blank" rel="noreferrer">
+          <figure className="flex justify-end overflow-hidden">
+            <Image
+              src={cover}
+              width={150}
+              height={80}
+              alt="Project Cover"
+              className="h-[160px] w-full rounded-md object-cover object-top"
+            />
+          </figure>
+        </a>
         <div className="flex-1">
-          <div className="flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
-            <h3 className="text-accent text-lg font-medium md:font-semibold">{title}</h3>
+          <div className="mt-1 flex flex-col flex-wrap gap-3 sm:flex-row sm:items-center">
+            <h3 className="text-accent text-lg font-medium md:font-semibold">
+              <a href={livePreview} target="_blank" rel="noreferrer">
+                {title}
+              </a>
+            </h3>
 
             {/* {type && (
               <span
@@ -78,7 +85,7 @@ const ProjectCard = ({ data }) => {
         </div>
 
         <div className="flex gap-5">
-          {livePreview && (
+          {livePreview ? (
             <a
               href={livePreview}
               className="text-accent flex gap-2 text-sm underline underline-offset-[3px] transition-all duration-75 ease-linear hover:scale-105 md:text-base"
@@ -87,6 +94,11 @@ const ProjectCard = ({ data }) => {
               <PreviewIcon className="h-auto w-[18px] md:w-5" />
               <span>Live Preview</span>
             </a>
+          ) : (
+            <div className="flex cursor-not-allowed items-center gap-2 font-medium text-slate-500 opacity-70">
+              <PlayCircle className="h-5 w-5" />
+              Internal Application
+            </div>
           )}
 
           {/* {githubLink && (
