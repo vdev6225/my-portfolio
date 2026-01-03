@@ -34,10 +34,10 @@ const Footer = () => {
             accessible digital experiences for the modern web.
           </p>
           <ul className="mt-5 md:mt-6 flex gap-4">
-            <SocialLink href="#" icon={<Github className="h-5 w-5" />} />
-            <SocialLink href="#" icon={<Linkedin className="h-5 w-5" />} />
-            <SocialLink href="#" icon={<Twitter className="h-5 w-5" />} />
-            {/* <SocialLink href="mailto:pv7451@gmail.com" icon={<Mail className="h-5 w-5" />} /> */}
+            <SocialLink href="https://github.com/vdev6225" icon={<Github className="h-5 w-5" />} />
+            <SocialLink href="https://www.linkedin.com/in/vishnu-account/" icon={<Linkedin className="h-5 w-5" />} />
+            {/* <SocialLink href="#" icon={<Twitter className="h-5 w-5" />} /> */}
+            {/* <SocialLink href="mailto:vdev6225@gmail.com" icon={<Mail className="h-5 w-5" />} /> */}
           </ul>
         </div>
 
@@ -55,14 +55,14 @@ const Footer = () => {
               <h5 className="text-neutral mb-4 text-lg font-medium">Contact Me</h5>
               <div className="flex flex-col gap-1">
                 <a
-                  href="mailto:pv7451@gmail.com"
+                  href="mailto:vdev6225@gmail.com"
                   className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                  pv7451@gmail.com
+                  vdev6225@gmail.com
                 </a>
                 <a
-                  href="tel:+919711623916"
+                  href="tel:+919582897450"
                   className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                  +91 9711623916
+                  +91 95828 97450
                 </a>
               </div>
             </div>
@@ -95,14 +95,14 @@ const Footer = () => {
               <h5 className="text-neutral mb-4 text-lg font-medium">Contact Me</h5>
               <div className="flex flex-col gap-1">
                 <a
-                  href="mailto:pv7451@gmail.com"
+                  href="mailto:vdev6225@gmail.com"
                   className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                  pv7451@gmail.com
+                  vdev6225@gmail.com
                 </a>
                 <a
-                  href="tel:+919711623916"
+                  href="tel:+919582897450"
                   className="text-tertiary-content hover:text-neutral text-sm font-light transition-colors duration-300">
-                  +91 9711623916
+                  +91 95828 97450
                 </a>
               </div>
             </div>

@@ -40,8 +40,9 @@ const Hero = () => {
             </a>
 
             <a
-              href="#"
+              href="https://www.linkedin.com/in/vishnu-account/"
               aria-label="View LinkedIn Profile"
+              target="_blank" rel="noopener noreferrer"
               className="text-neutral bg-secondary cursor-pointer rounded-lg px-[14px] py-[10px] text-sm"
             >
               LinkedIn Profile

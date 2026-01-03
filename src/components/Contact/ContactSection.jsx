@@ -29,21 +29,21 @@ const ContactSection = () => {
             </p>
             {/* Email */}
             <a
-              href="mailto:pv7451@gmail.com"
+              href="mailto:vdev6225@gmail.com"
               className="group flex items-center gap-4 text-slate-300 transition-colors duration-300 hover:text-[#18f2e5]">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 bg-slate-900 transition-colors group-hover:border-[#18f2e5]/50 group-hover:shadow-[0_0_10px_rgba(24,242,229,0.1)]">
                 <Mail className="h-5 w-5" />
               </div>
-              <span className="font-mono text-sm md:text-base">pv7451@gmail.com</span>
+              <span className="font-mono text-sm md:text-base">vdev6225@gmail.com</span>
             </a>
             {/* Phone */}
             <a
-              href="tel:+919711623916"
+              href="tel:+919582897450"
               className="group flex items-center gap-4 text-slate-300 transition-colors duration-300 hover:text-[#18f2e5]">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg border border-slate-700 bg-slate-900 transition-colors group-hover:border-[#18f2e5]/50 group-hover:shadow-[0_0_10px_rgba(24,242,229,0.1)]">
                 <Phone className="h-5 w-5" />
               </div>
-              <span className="font-mono text-sm md:text-base">+91 9711623916</span>
+              <span className="font-mono text-sm md:text-base">+91 95828 97450</span>
             </a>
             {/* Location */}
             <div className="group flex items-center gap-4 text-slate-300">
