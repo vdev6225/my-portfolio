@@ -226,7 +226,7 @@ const ProjectSection = () => {
       <div className="flex items-center justify-between">
         <SectionHeading title="// Projects" />
         <Link
-          href="#"
+          href="/projects"
           className="bg-accent hidden rounded-lg px-4 py-2 text-sm font-medium text-[#00071E] md:block">
           View All
         </Link>
@@ -239,7 +239,7 @@ const ProjectSection = () => {
       <ProjectSlider projects={projectsByType[activeTab]} />
       <div className="mt-6 flex justify-center md:hidden">
         <Link
-          href="#"
+          href="/projects"
           className="bg-accent rounded-lg px-4 py-2 text-sm font-medium text-[#00071E]">
           View All
         </Link>
