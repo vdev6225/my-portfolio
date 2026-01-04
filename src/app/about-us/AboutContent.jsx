@@ -26,8 +26,9 @@ export default function AboutPage() {
 
             <div className="space-y-4 text-lg leading-relaxed text-slate-400">
               <p>
-                I am a <strong>Frontend Developer</strong> with a twist—I started my career as a{' '}
-                <strong>Senior Web Designer</strong>.
+                I am a <strong>Frontend Developer</strong> with a designer&apos;s eye. Leveraging
+                years of experience as a <strong>Senior Web Designer</strong>, I bridge the gap
+                between aesthetic vision and technical reality.
               </p>
               <p>
                 This background gives me a unique advantage: I don&apos;t just write code; I
@@ -48,7 +49,7 @@ export default function AboutPage() {
                 Let&apos;s Talk
               </Link>
               <a
-                href="/resume.pdf"
+                href="/Vishnu-Updated-CV.pdf"
                 target="_blank"
                 className="rounded-lg border border-[#18f2e5] px-6 py-3 text-sm font-bold tracking-widest text-[#18f2e5] uppercase transition-all hover:bg-[#18f2e5]/10">
                 Resume

@@ -32,7 +32,7 @@ const Hero = () => {
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
-              href="#"
+              href="#contact-me"
               aria-label="Connect with me"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]"
             >
