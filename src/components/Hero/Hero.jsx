@@ -22,7 +22,7 @@ const Hero = () => {
             </span>
             <span className="text-accent block text-[1.75rem] font-bold">
               {/* {role} */}
-              Front-End Developer
+              Frontend Developer
             </span>
           </h1>
 
