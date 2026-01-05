@@ -27,16 +27,17 @@ const Hero = () => {
           </h1>
 
           <h2 className="text-neutral mt-3">
-            Some people scroll through websites. <br /> I build the ones they remember.
+            Frontend Developer building responsive, accessible web experiences with React.js and Next.js.
           </h2>
 
           <div className="mt-6 flex flex-wrap gap-6">
             <a
-              href="#contact-me"
-              aria-label="Connect with me"
+              href="/Vishnu-Updated-CV.pdf"
+              aria-label="Download Resume"
+              target="_blank" rel="noopener noreferrer"
               className="bg-accent min-w-32 cursor-pointer rounded-lg px-[14px] py-[10px] text-center text-sm font-medium text-[#00071E]"
             >
-              Hire Me
+              Download Resume
             </a>
 
             <a

@@ -50,9 +50,11 @@ export default function AboutPage() {
               </Link>
               <a
                 href="/Vishnu-Updated-CV.pdf"
+                aria-label="Download Resume"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-lg border border-[#18f2e5] px-6 py-3 text-sm font-bold tracking-widest text-[#18f2e5] uppercase transition-all hover:bg-[#18f2e5]/10">
-                Resume
+                Download Resume
               </a>
             </div>
           </div>
