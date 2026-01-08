@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Let&apos;s Talk
               </Link>
               <a
-                href="/Vishnu-Updated-CV.pdf"
+                href="/Vishnu_Dev_Resume.pdf"
                 aria-label="Download Resume"
                 target="_blank"
                 rel="noopener noreferrer"
