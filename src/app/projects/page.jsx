@@ -16,7 +16,7 @@ export const metadata = {
   openGraph: {
     title: 'Projects | Vishnu - Web Applications & Case Studies',
     description: 'A complete archive of my work: E-commerce, CRM Panels, and SaaS Applications.',
-    url: 'https://heyvishnu.netlify.app/projects',
+    url: 'https://heyvishnu.in/projects',
     images: [
       {
         url: '/og-image-projects.png', // Make sure this image is in your public folder

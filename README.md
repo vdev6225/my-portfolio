@@ -11,7 +11,7 @@
 ![Project Banner](public/og-image-home.png)
 A high-performance personal portfolio built to present my transition from Senior Web Designer to Frontend Developer. This project demonstrates strong frontend engineering fundamentals, modern UI development, SEO optimization, and scalable component architecture using React and Next.js.
 
-🔗 **Live Portfolio:** [https://heyvishnu.netlify.app/](https://heyvishnu.netlify.app/)
+🔗 **Live Portfolio:** [https://heyvishnu.in/](https://heyvishnu.in/)
 
 ---
 

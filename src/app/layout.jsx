@@ -14,7 +14,7 @@ const firaCode = Fira_Code({
 const title = 'Vishnu | Senior Web Designer & Frontend Developer'
 const description =
   'Portfolio of Vishnu, a Senior Web Designer turned Frontend Developer based in New Delhi. Specializing in pixel-perfect React, Next.js, and high-performance web interfaces.'
-const siteUrl = 'https://heyvishnu.netlify.app' // Your live URL
+const siteUrl = 'https://heyvishnu.in' // Your live URL
 
 export const metadata = {
   // Base URL for resolving relative image paths (important for OG images)

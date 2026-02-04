@@ -15,7 +15,7 @@ export const metadata = {
     title: 'About Me | Vishnu - The Bridge Between Design & Code',
     description:
       'From Senior Web Designer to Frontend Developer. Read my journey and download my resume.',
-    url: 'https://heyvishnu.netlify.app/about-us',
+    url: 'https://heyvishnu.in/about-us',
     images: [
       {
         url: '/og-image-about.png', // Ensure this exists in public/
