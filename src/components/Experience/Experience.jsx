@@ -22,7 +22,7 @@ const experiences = [
   // 2. YOUR LAST JOB: Adjusted title and fixed date
   {
     id: 1,
-    role: 'Senior Web Designer & Developer', // HYBRID TITLE
+    role: 'Senior UI Developer', // HYBRID TITLE
     company: 'Global Trendz Pvt. Ltd.',
     location: 'India',
     date: 'May 2024 – Nov 2025', // Fixed date to be honest
@@ -38,7 +38,7 @@ const experiences = [
   },
   {
     id: 2,
-    role: 'Web Designer (React Focus)', // Added context
+    role: 'UI Developer (React Focus)', // Added context
     company: 'Global Trendz Pvt. Ltd.',
     location: 'India',
     date: 'Dec 2022 – May 2024',
@@ -53,7 +53,7 @@ const experiences = [
   },
   {
     id: 3,
-    role: 'Web Designer Intern',
+    role: 'UI Developer Intern',
     company: 'Global Trendz Pvt. Ltd.',
     location: 'India',
     date: 'Sep 2022 – Dec 2022',

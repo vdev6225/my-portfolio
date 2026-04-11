@@ -9,12 +9,12 @@ import Skills from '@/components/Skills/Skills'
 // import TestimonialSection from '@/components/Testimonials/TestimonialSection'
 // import { getAllProjects, getAllTestimonials } from '@/services'
 export const metadata = {
-  title: 'Vishnu | Senior Web Designer & Frontend Developer',
-  description: 'Portfolio of Vishnu, a Senior Web Designer turned Frontend Developer based in New Delhi. Specializing in pixel-perfect React, Next.js, and high-performance web interfaces.',
-  keywords: ['Frontend Developer', 'Web Designer', 'React Developer', 'Next.js', 'New Delhi', 'UI/UX', 'Portfolio'],
+  title: 'Vishnu | Senior UI Developer & Frontend Developer',
+  description: 'Portfolio of Vishnu, a Senior UI Developer turned Frontend Developer based in New Delhi. Specializing in pixel-perfect React, Next.js, and high-performance web interfaces.',
+  keywords: ['Frontend Developer', 'UI Developer', 'Web Designer', 'React Developer', 'Next.js', 'New Delhi', 'UI/UX', 'Portfolio'],
   authors: [{ name: 'Vishnu' }],
   openGraph: {
-    title: 'Vishnu | Senior Web Designer & Frontend Developer',
+    title: 'Vishnu | Senior UI Developer & Frontend Developer',
     description: 'Building the bridge between creative design and technical logic. Explore my high-performance web applications.',
     url: 'https://heyvishnu.in/',
     siteName: 'Vishnu Portfolio',
@@ -31,7 +31,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Vishnu | Senior Web Designer & Frontend Developer',
+    title: 'Vishnu | Senior UI Developer & Frontend Developer',
     description: 'Building the bridge between creative design and technical logic.',
     images: ['https://heyvishnu.in/og-image-home.png'], // Same image as OG
   },

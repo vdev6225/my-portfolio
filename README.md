@@ -1,4 +1,4 @@
-# 👨‍💻 Vishnu | Senior Web Designer & Frontend Developer Portfolio
+# 👨‍💻 Vishnu | Senior UI Developer & Frontend Developer Portfolio
 
 ![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=nextdotjs)
 ![React](https://img.shields.io/badge/React-18-20232A?logo=react)
@@ -9,7 +9,7 @@
 ![Last Commit](https://img.shields.io/github/last-commit/vdev6225/my-portfolio)
 
 ![Project Banner](public/og-image-home.png)
-A high-performance personal portfolio built to present my transition from Senior Web Designer to Frontend Developer. This project demonstrates strong frontend engineering fundamentals, modern UI development, SEO optimization, and scalable component architecture using React and Next.js.
+A high-performance personal portfolio built to present my transition from Senior UI Developer to Frontend Developer. This project demonstrates strong frontend engineering fundamentals, modern UI development, SEO optimization, and scalable component architecture using React and Next.js.
 
 🔗 **Live Portfolio:** [https://heyvishnu.in/](https://heyvishnu.in/)
 

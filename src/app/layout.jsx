@@ -11,9 +11,9 @@ const firaCode = Fira_Code({
 })
 
 // --- 1. GLOBAL SEO CONFIGURATION ---
-const title = 'Vishnu | Senior Web Designer & Frontend Developer'
+const title = 'Vishnu | Senior UI Developer & Frontend Developer'
 const description =
-  'Portfolio of Vishnu, a Senior Web Designer turned Frontend Developer based in New Delhi. Specializing in pixel-perfect React, Next.js, and high-performance web interfaces.'
+  'Portfolio of Vishnu, a Senior UI Developer turned Frontend Developer based in New Delhi. Specializing in pixel-perfect React, Next.js, and high-performance web interfaces.'
 const siteUrl = 'https://heyvishnu.in' // Your live URL
 
 export const metadata = {
@@ -58,7 +58,7 @@ export const metadata = {
         url: '/og-image-home.png', // Ensure this file exists in your public folder
         width: 1200,
         height: 630,
-        alt: 'Vishnu - Senior Web Designer & Frontend Developer',
+        alt: 'Vishnu - Senior UI Developer & Frontend Developer',
       },
     ],
   },

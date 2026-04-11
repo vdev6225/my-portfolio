@@ -14,7 +14,7 @@ export const metadata = {
   openGraph: {
     title: 'About Me | Vishnu - The Bridge Between Design & Code',
     description:
-      'From Senior Web Designer to Frontend Developer. Read my journey and download my resume.',
+      'From Senior UI Developer to Frontend Developer. Read my journey and download my resume.',
     url: 'https://heyvishnu.in/about-us',
     images: [
       {

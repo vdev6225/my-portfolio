@@ -27,7 +27,7 @@ export default function AboutPage() {
             <div className="space-y-4 text-lg leading-relaxed text-slate-400">
               <p>
                 I am a <strong>Frontend Developer</strong> with a designer&apos;s eye. Leveraging
-                years of experience as a <strong>Senior Web Designer</strong>, I bridge the gap
+                years of experience as a <strong>Senior UI Developer</strong>, I bridge the gap
                 between aesthetic vision and technical reality.
               </p>
               <p>
@@ -49,7 +49,7 @@ export default function AboutPage() {
                 Let&apos;s Talk
               </Link>
               <a
-                href="/Vishnu_Dev_Resume.pdf"
+                href="/Vishnu-Dev-CV.pdf"
                 aria-label="Download Resume"
                 target="_blank"
                 rel="noopener noreferrer"

@@ -30,7 +30,7 @@ const Footer = () => {
           </Link>
 
           <p className="text-tertiary-content max-w-sm">
-            Senior Web Designer & Frontend Developer. Building pixel-perfect, responsive, and
+            Senior UI Developer & Frontend Developer. Building pixel-perfect, responsive, and
             accessible digital experiences for the modern web.
           </p>
           <ul className="mt-5 md:mt-6 flex gap-4">
